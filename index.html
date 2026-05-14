@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fistbook – Sign In</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- Left branding panel -->
+    <div class="brand-panel">
+      <div class="brand-inner">
+        <div class="logo-mark">✊</div>
+        <h1 class="brand-name">fistbook</h1>
+        <p class="brand-tagline">Connect with the world.<br/>Bump fists with your people.</p>
+      </div>
+    </div>
+
+    <!-- Right sign-in panel -->
+    <div class="auth-panel">
+      <div class="auth-card">
+        <h2 class="card-title">Sign In</h2>
+        <p class="card-sub">Welcome back! Enter your credentials below.</p>
+
+        <div id="message-box" class="message-box hidden"></div>
+
+        <div class="form-group">
+          <label for="username">Username or Email</label>
+          <input type="text" id="username" placeholder="you@example.com" autocomplete="username" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="password-wrap">
+            <input type="password" id="password" placeholder="••••••••" autocomplete="current-password" />
+            <button class="toggle-pw" id="togglePw" type="button" aria-label="Show password">👁</button>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="signInBtn">Sign In</button>
+
+        <div class="divider"><span>or</span></div>
+
+        <p class="register-link">Don't have an account? <a href="register.html">Create one</a></p>
+
+        <p class="forgot-link"><a href="#">Forgot password?</a></p>
+      </div>
+
+      <p class="footer-note">© 2026 Fistbook · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
